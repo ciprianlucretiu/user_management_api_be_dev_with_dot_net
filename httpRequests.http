@@ -1,0 +1,28 @@
+GET http://localhost:5280/api/users
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+
+###
+POST http://localhost:5280/api/users
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "email": "jane@example.com"
+}
+
+###
+POST http://localhost:5280/api/users
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+Content-Type: application/json
+
+{
+  "firstName": "Janet",
+  "lastName": "Smithson",
+  "email": "janet.smithson@example.com"
+}
+
+###
+DELETE http://localhost:5280/api/users/4
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
